@@ -1,15 +1,17 @@
 # Image Classification using CNN
 
+# AUTHOR 
+NAME: SHUBHAM PURBEY
 
 ## Objective
 
 Develop a Convolutional Neural Network (CNN) model for an animal welfare organization to automatically classify pet images into **Cats** and **Dogs** categories. The goal is to achieve high classification accuracy using deep learning techniques on image data.
 
-## 📊 Dataset
+## Dataset
 
 **Cats vs Dogs Dataset** from Kaggle:
 
-🔗 [Dog and Cat Classification Dataset](https://www.kaggle.com/datasets/bhavikjikadara/dog-and-cat-classification-dataset)
+[Dog and Cat Classification Dataset](https://www.kaggle.com/datasets/bhavikjikadara/dog-and-cat-classification-dataset)
 
 > **Note:** The dataset is not included in this repository. Please download it from the Kaggle link above and extract it into a `dataset/` folder in the project root directory.
 
@@ -30,7 +32,7 @@ Assignment-9/
         └── ...
 ```
 
-## 📚 Libraries Used
+##  Libraries Used
 
 | Library | Purpose |
 |---|---|
@@ -71,7 +73,7 @@ pip install tensorflow numpy matplotlib seaborn scikit-learn
 - Generated a **Confusion Matrix** heatmap.
 - Plotted **Accuracy vs Epoch** and **Loss vs Epoch** training curves.
 
-## 🏗️ CNN Architecture
+##  CNN Architecture
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -108,7 +110,7 @@ pip install tensorflow numpy matplotlib seaborn scikit-learn
 
 **Total Trainable Parameters:** ~3,304,769
 
-## 📈 Results
+## Results
 
 ### Evaluation Metrics
 
@@ -134,11 +136,11 @@ After running the script, the following plots are generated:
 3. The gap between training and validation accuracy indicates whether the model is overfitting or generalizing well.
 4. The confusion matrix reveals balanced performance across both classes, showing no strong class bias.
 
-## ✅ Conclusion
+##  Conclusion
 
 A Convolutional Neural Network was successfully developed to classify cat and dog images. The model learns spatial hierarchies of features — **convolution layers** automatically extract edges, textures, and patterns, while **pooling layers** reduce spatial dimensions and introduce translational invariance. A key **advantage of CNN over ANN** for image classification is parameter sharing through convolutional filters, which preserves spatial relationships and drastically reduces the number of trainable parameters. However, a **limitation of CNNs** is their dependence on large labeled datasets and significant computational resources (GPU) for training, which can be challenging in resource-constrained environments.
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone this repository:
    ```bash
@@ -157,11 +159,3 @@ A Convolutional Neural Network was successfully developed to classify cat and do
    ```bash
    python Assignment-9.py
    ```
-
-## 📝 Author
-
-**Student Name** — Assignment 9: Image Classification using CNN
-
----
-
-*This project is part of a machine learning course assignment. The dataset is sourced from Kaggle and is not redistributed in this repository.*

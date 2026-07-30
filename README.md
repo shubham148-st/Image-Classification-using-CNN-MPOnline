@@ -1,7 +1,8 @@
 # Image Classification using CNN
 
 # AUTHOR 
-NAME: SHUBHAM PURBEY
+NAME: SHUBHAM PURBEY 
+REG.NO: 23MIM10040
 
 ## Objective
 
@@ -48,7 +49,7 @@ Assignment-9/
 pip install tensorflow numpy matplotlib seaborn scikit-learn
 ```
 
-## 🔬 Methodology
+## Methodology
 
 ### 1. Data Understanding
 - Explored the dataset folder structure and class distribution.
@@ -116,36 +117,46 @@ pip install tensorflow numpy matplotlib seaborn scikit-learn
 
 | Metric | Score |
 |---|---|
-| Test Accuracy | ~80–90% (varies per run) |
-| Precision | Reported in classification report |
-| Recall | Reported in classification report |
-| F1-Score | Reported in classification report |
+| Test Accuracy | 91.48% |
+| Test Loss | 0.2775 |
+| Training Accuracy | 97.93% |
+| Weighted Precision | 0.91 |
+| Weighted Recall | 0.91 |
+| Weighted F1-Score | 0.91 |
+
+### Classification Report
+
+| Class | Precision | Recall | F1-Score | Support |
+|---|---|---|---|---|
+| Cat | 0.95 | 0.96 | 0.95 | 2499 |
+| Dog | 0.28 | 0.24 | 0.26 | 166 |
+| **Weighted Avg** | **0.91** | **0.91** | **0.91** | **2665** |
 
 ### Visualizations
 
 After running the script, the following plots are generated:
 
-1. **`sample_images.png`** — 5 sample images with class labels
-2. **`confusion_matrix.png`** — Heatmap of True vs Predicted labels
-3. **`training_curves.png`** — Accuracy and Loss curves over epochs
+1. **`sample_images.png`** -- 5 sample images with class labels
+2. **`confusion_matrix.png`** -- Heatmap of True vs Predicted labels
+3. **`training_curves.png`** -- Accuracy and Loss curves over epochs
 
 ### Observations
 
-1. The model's training accuracy steadily improves across epochs, demonstrating effective feature learning.
-2. The loss function decreases consistently during training, confirming convergence.
-3. The gap between training and validation accuracy indicates whether the model is overfitting or generalizing well.
-4. The confusion matrix reveals balanced performance across both classes, showing no strong class bias.
+1. The model achieved a training accuracy of 97.93% and a test accuracy of 91.48% after 10 epochs.
+2. Training loss decreased from 0.2423 to 0.0617, showing effective feature learning.
+3. The train-test accuracy gap is small (6.4%), indicating good generalization without significant overfitting.
+4. The dataset is imbalanced (2499 Cat vs 166 Dog in the test set), which affects per-class Dog metrics. Data augmentation or class balancing could improve Dog-class recall.
 
-##  Conclusion
+## Conclusion
 
-A Convolutional Neural Network was successfully developed to classify cat and dog images. The model learns spatial hierarchies of features — **convolution layers** automatically extract edges, textures, and patterns, while **pooling layers** reduce spatial dimensions and introduce translational invariance. A key **advantage of CNN over ANN** for image classification is parameter sharing through convolutional filters, which preserves spatial relationships and drastically reduces the number of trainable parameters. However, a **limitation of CNNs** is their dependence on large labeled datasets and significant computational resources (GPU) for training, which can be challenging in resource-constrained environments.
+A Convolutional Neural Network was successfully developed to classify cat and dog images, achieving 91.48% test accuracy. **Convolution layers** automatically extract edges, textures, and patterns, while **pooling layers** reduce spatial dimensions and introduce translational invariance. A key **advantage of CNN over ANN** for image classification is parameter sharing through convolutional filters, which preserves spatial relationships and drastically reduces the number of trainable parameters. However, a **limitation of CNNs** is their dependence on large labeled datasets and significant computational resources (GPU) for training, which can be challenging in resource-constrained environments.
 
 ## How to Run
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/Assignment-9-CNN-Image-Classification.git
-   cd Assignment-9-CNN-Image-Classification
+   git clone https://github.com/shubham148-st/Image-Classification-using-CNN-MPOnline.git
+   cd Image-Classification-using-CNN-MPOnline
    ```
 
 2. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/bhavikjikadara/dog-and-cat-classification-dataset) and extract it into a `dataset/` folder.

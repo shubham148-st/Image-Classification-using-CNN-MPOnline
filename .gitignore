@@ -1,0 +1,27 @@
+# Dataset — do not upload to GitHub
+dataset/
+
+# Model files
+*.h5
+*.keras
+
+# Generated plots (optional — you may want to commit these)
+# sample_images.png
+# confusion_matrix.png
+# training_curves.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
